@@ -1,0 +1,9 @@
+n = int(input("Digite um numero:"))
+
+if (n >= 0):
+    a = n
+    print("O numero",a,"é variavel de A")
+
+else:
+    b = n
+    print("O numero",b,"é variavel de B")
