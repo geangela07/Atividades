@@ -1,0 +1,5 @@
+for i in range(100,201):
+    if(i%2 == 1):
+        impares = []
+        impares.append([i])
+        print ("Os numeros impares de 100 a 200 são:",i)
