@@ -1,0 +1,21 @@
+a = float(input("Digite o primeiro numero:"))
+b = float(input("Digite o segundo numero:"))
+c = float(input("Digite o segundo numero:"))
+
+if a > b:
+    if a < c:
+        media = a
+    elif b > c:
+        media = b
+    else:
+        media = c
+
+else:
+    if a > c:
+        media = a 
+    elif b < c:
+        media = b
+    else:
+        media = c
+
+print("A media é:",media)
