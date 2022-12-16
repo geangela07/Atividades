@@ -1,0 +1,7 @@
+def minimoNumero(lista):
+    minimo = lista[0]
+    for b in lista:
+        if (b < minimo):
+            minimo = b
+    return minimo
+print(minimoNumero([3,4,5,1]))
