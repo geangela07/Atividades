@@ -1,0 +1,12 @@
+def soma (x,y):
+    soma = x + y
+
+    if soma in range(15,20):
+        return 20
+
+    else:
+        return soma
+
+print(soma(10,7))
+print(soma(10,9))
+print(soma(10,19))
