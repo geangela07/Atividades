@@ -1,0 +1,8 @@
+sala = input("Digite o valor do salário:")
+financ = input("Digite o valor do financiamento pretendido:")
+
+if (financ <=5 * sala):
+    print("Financiamneto concedido, obrigado por nos consultar")
+
+else:
+    print("Financiamento negado, obrigado por nos consultar")
