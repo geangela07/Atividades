@@ -1,0 +1,10 @@
+p = {1: 13, 2: 14, 3: 15 , 4: 16}
+def elementoPresente(x):
+    if x in p:
+        print("Este elemento está presente no dicionario")
+
+    else:
+        print("Este elemento não está presente no dicionario")
+
+elementoPresente(3)
+elementoPresente(5)
