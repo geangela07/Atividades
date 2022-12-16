@@ -1,0 +1,7 @@
+def maximoNumero(lista):
+    maximo = lista[0]
+    for a in lista:
+        if (a > maximo):
+            maximo = a 
+    return maximo
+print(maximoNumero([3,4,5,0]))
