@@ -1,0 +1,123 @@
+import random
+
+
+#Definição da classe pokemon: requisito 1
+class Pokemon:                      
+    def __init__(self,nome,especie,tipo,ataque,defesa,hp):
+        self._nome = nome
+        self._tipo = tipo
+        self._hp = hp
+        self._especie = especie
+        self._ataque = ataque
+        self._defesa = defesa
+
+ #Definição das subclasses: requisito 2
+class pokemonAquatico(Pokemon):           
+    def __init__(self,nome,especie,ataque,defesa,tipo,hp):
+        super().__init__(nome,especie,ataque,defesa,tipo,hp)
+        self._tipo = "aquatico"
+        self._movimento = "Jato d'agua"
+    
+
+class pokemonEletrico(Pokemon):
+    def __init__(self,nome,especie,ataque,defesa,tipo,hp):
+        super().__init__(nome,especie,ataque,defesa,tipo,hp)
+        self._tipo = "eletrico"
+        self._movimento = "Choque do trovão"
+
+class pokemonFogo(Pokemon):
+    def __init__(self,nome,especie,ataque,defesa,tipo,hp):
+        super().__init__(nome,especie,ataque,defesa,tipo,hp)
+        self._tipo = "fogo"
+        self._movimento = "Lança chamas"
+
+#Definição classe treinador: requisito 3
+
+class Treinador:          
+    def __init__(self,nome,pokemons):
+        self._nome = nome
+        self._pokemons = pokemons
+    def escolherPokemon(self):
+        return random.choice(self._pokemons)
+
+#Definição das subclasses: requisito 4
+
+class Jogador(Treinador):   
+    def __init__(self, nome, pokemons):
+        super().__init__(nome, pokemons)
+
+
+# Escolha do pokemon pelo jogador: requisito 8
+# Uso de while e for: requisito 10        
+
+    def escolherPokemon(self):
+        while True:
+            print(f"Escolha seu pokemon: ")
+
+            for i in range(len(self._pokemons)):
+                print(f"{i+1}. {self._pokemons[i]._nome}")
+
+            pokemonEscolhido = input("Digite o número do pokemon escolhido: ")
+            return self._pokemons[int(pokemonEscolhido)-1]
+
+# Definição do metodo capturar: requisito 6
+    def capturarPokemon(self,pokemonCapturado):
+        self._pokemons.append(pokemonCapturado)
+        print(f"Você capturou o {pokemonCapturado._nome}")
+
+
+# Defiição do metodo lista de pokemons: requisito 7
+    def listaPokemons(self):
+        print("Sua lista de pokemons: ")
+        for i in range(len(self._pokemons)):
+            print(f"{i+1}. {self._pokemons[i]._nome}")
+
+        
+        
+class Inimigo(Treinador):
+    def __init__(self, nome, pokemons):
+        super().__init__(nome, pokemons)
+
+# Definição de função fora da classe: requisito 9
+# Metodo batalha: requisito 5
+
+def batalharPokemons(treinador1,treinador2):
+    p1 = treinador1.escolherPokemon()
+    p2 = treinador2.escolherPokemon()
+
+
+    p1Forca = 2 *(p1._ataque + p1._defesa)
+    p2Forca = 2 *(p2._ataque + p2._defesa) 
+
+    print(f"{p1._nome} atacou com {p1Forca}")
+    print(f"{p2._nome} atacou com {p2Forca}")
+
+# Uso de if: requisito 11
+
+    if(p1Forca > p2Forca):
+         print(f"O vencedor foi {p1._nome} com a força {p1Forca} do treinador {treinador1._nome}")
+
+    elif(p1Forca < p2Forca):
+        print(f"o vencedor foi {p2._nome} com força {p2Forca} do treinador {treinador2._nome}")
+    else:
+        print("Deu empate")
+
+
+pokemonDisponiveis = [
+pokemonFogo("Eva","Charmander","Fogo",100,60,90),
+pokemonEletrico("Ton","Pikachu","Eletrico",100,30,78),
+pokemonAquatico("Bola","Squirtle","Aquatico",200,92,78),
+pokemonFogo("Kaio","Charmelon","Fogo",200,60,52)
+]
+
+jogador = Jogador("Ana",[pokemonDisponiveis[0],pokemonDisponiveis[1],pokemonDisponiveis[2]])
+
+inimigo = Inimigo("Jonas",pokemonDisponiveis)
+
+# batalharPokemons(jogador,inimigo)
+jogador.listaPokemons()
+jogador.capturarPokemon(pokemonDisponiveis[3])
+jogador.listaPokemons()
+
+
+    
