@@ -31,6 +31,12 @@ class pokemonFogo(Pokemon):
         self._tipo = "fogo"
         self._movimento = "Lança chamas"
 
+class pokemonVenenoso(Pokemon):
+    def __init__(self, nome, especie, tipo, ataque, defesa, hp):
+        super().__init__(nome, especie, tipo, ataque, defesa, hp)
+        self._tipo = "veneno"
+        self._movimento = "Spray"
+
 #Definição classe treinador: requisito 3
 
 class Treinador:          
@@ -110,14 +116,16 @@ pokemonEletrico("Ton","Pikachu","Eletrico",100,30,78),
 pokemonAquatico("Bola","Squirtle","Aquatico",200,92,78),
 pokemonFogo("Kaio","Charmelon","Fogo",200,60,52),
 pokemonAquatico("Tata","Wartortle","Aquatico",300,65,32),
-pokemonEletrico("Gabi","Raichu","Eletrico",250,85,69)
+pokemonEletrico("Gabi","Raichu","Eletrico",250,85,69),
+pokemonVenenoso("Ana","Nidorino","Venenoso",600,69,30),
+pokemonVenenoso("Dana","Nidorina","Venenoso",542,68,52)
 ]
 
 nomeJogador = input("Digite seu nome: ")
 
 print("Escolha seu Pokemon inicial: ")
 
-for i in range(3):
+for i in range(4):
     print(f"{i+1}. {pokemonDisponiveis[i]._nome}")
 
 pokemonInicial = pokemonDisponiveis[int(input("Digite o pokemon escolhido: "))-1]
@@ -159,6 +167,16 @@ while True:
         print("Você digitou algo inválido,tente novamente.")
 
 
+
+
+
+
+
+
+
+
+
+    
 
 
 
