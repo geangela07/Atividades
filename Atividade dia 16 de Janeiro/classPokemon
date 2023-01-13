@@ -1,5 +1,4 @@
 
-#Definição classe pokemon: requisito 1
 class Pokemon:                      
     def __init__(self,nome,especie,tipo,ataque,defesa,hp):
         self._nome = nome
@@ -9,7 +8,6 @@ class Pokemon:
         self._ataque = ataque
         self._defesa = defesa
 
- #Definição das subclasses: requisito 2
 class pokemonAquatico(Pokemon):           
     def __init__(self,nome,especie,ataque,defesa,tipo,hp):
         super().__init__(nome,especie,ataque,defesa,tipo,hp)
