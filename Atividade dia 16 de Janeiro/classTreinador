@@ -33,8 +33,7 @@ class Jogador(Treinador):
         for i in range(len(self._pokemons)):
             print(f"{i+1}. {self._pokemons[i]._nome}")
 
-        
-        
+              
 class Inimigo(Treinador):
     def __init__(self, nome, pokemons):
         super().__init__(nome, pokemons)
