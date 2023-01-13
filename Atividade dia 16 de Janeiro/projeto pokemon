@@ -18,10 +18,10 @@ def batalharPokemons(treinador1,treinador2):
 
 
     if(p1Forca > p2Forca):
-         print(f"O vencedor foi {p1._nome} com a força {p1Forca} do treinador {treinador1._nome}")
+         print(f"O vencedor foi {p1._nome} com a força {p1Forca} do treinador {treinador1._nome} e com movimento {p1._movimento}")
 
     elif(p1Forca < p2Forca):
-        print(f"o vencedor foi {p2._nome} com força {p2Forca} do treinador {treinador2._nome}")
+        print(f"o vencedor foi {p2._nome} com força {p2Forca} do treinador {treinador2._nome} e com movimento {p2._movimento}")
     else:
         print("Deu empate")
 
