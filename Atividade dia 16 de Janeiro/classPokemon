@@ -1,3 +1,5 @@
+
+#Definição classe pokemon: requisito 1
 class Pokemon:                      
     def __init__(self,nome,especie,tipo,ataque,defesa,hp):
         self._nome = nome
