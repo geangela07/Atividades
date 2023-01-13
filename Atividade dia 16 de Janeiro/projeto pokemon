@@ -49,8 +49,9 @@ print(f"O pokemon escolhido foi o {pokemonInicial._nome}")
 
 jogador = Jogador(nomeJogador,[pokemonInicial])
 inimigo = Inimigo("Bob",pokemonDisponiveis)
-
-
+inimigo2 = Inimigo("Arthur",pokemonDisponiveis)
+inimigo3 = Inimigo("Mateus",pokemonDisponiveis)
+Inimigos =[inimigo,inimigo2,inimigo3]
 while True:
     print("""
     Escolha o que você quer fazer:
@@ -77,9 +78,13 @@ while True:
         capturado = pokemonDisponiveis[int(input("Digite o pokemon escolhido: "))-1]
         jogador.capturarPokemon(capturado)
     elif menu == "3":
-        batalharPokemons(jogador,inimigo)
+        batalharPokemons(jogador,random.choice(Inimigos))
 
     else:
         print("Você digitou algo inválido,tente novamente.")
+
+
+
+
 
 
