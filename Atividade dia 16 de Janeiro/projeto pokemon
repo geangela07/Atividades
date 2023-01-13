@@ -54,11 +54,11 @@ inimigo3 = Inimigo("Mateus",pokemonDisponiveis)
 Inimigos =[inimigo,inimigo2,inimigo3]
 while True:
     print("""
-    Escolha o que você quer fazer:
+    Escolha umas das opções:
     1. Ver seus Pokemons
     2. Capturar um novo Pokemon
     3.Batalhar contra um oponente
-    0. sair do Jogo
+    0. Sair do Jogo
     """)
 
     menu = input("Digite a opção escolhida: ")
@@ -82,9 +82,4 @@ while True:
 
     else:
         print("Você digitou algo inválido,tente novamente.")
-
-
-
-
-
 
