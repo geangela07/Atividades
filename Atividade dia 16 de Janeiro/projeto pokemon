@@ -16,7 +16,6 @@ def batalharPokemons(treinador1,treinador2):
     print(f"{p1._nome} atacou com {p1Forca}")
     print(f"{p2._nome} atacou com {p2Forca}")
 
-# Uso de if: requisito 11
 
     if(p1Forca > p2Forca):
          print(f"O vencedor foi {p1._nome} com a força {p1Forca} do treinador {treinador1._nome}")
