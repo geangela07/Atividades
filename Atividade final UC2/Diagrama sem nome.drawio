@@ -1,1 +1,49 @@
-<mxfile host="app.diagrams.net" modified="2023-02-08T11:43:57.261Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" version="20.8.16" etag="WzEF97DDAKCbHK8I1OWa" type="github"><diagram name="Página-1" id="J3Mo5X581dAXeCSlPo6U">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-02-08T12:00:01.216Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="4MLqLed6KCxJUhByNc6M" version="20.8.16" type="github">
+  <diagram name="Página-1" id="J3Mo5X581dAXeCSlPo6U">
+    <mxGraphModel dx="954" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Yx8nHdYnPtw5ZSN3mkqo-1" value="Empresa" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="100" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Yx8nHdYnPtw5ZSN3mkqo-2" value="ID_Empresa(PK)&lt;br&gt;Nome_Empresa&lt;br&gt;Endereço_Empresa&lt;br&gt;CNPJ_Empresa" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="50" y="130" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Yx8nHdYnPtw5ZSN3mkqo-3" value="Compra" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="100" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Yx8nHdYnPtw5ZSN3mkqo-4" value="ID_Compra(PK)&lt;br&gt;DataPedido_Compra&lt;br&gt;ID_Empresa" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="330" y="130" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Yx8nHdYnPtw5ZSN3mkqo-5" value="Fornecedor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="100" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Yx8nHdYnPtw5ZSN3mkqo-6" value="ID_Fornecedor(PK)&lt;br&gt;Nome_Fornecedor&lt;br&gt;ID_Compra(FK)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="610" y="130" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Yx8nHdYnPtw5ZSN3mkqo-7" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=1.013;exitY=0.667;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.367;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Yx8nHdYnPtw5ZSN3mkqo-2" target="Yx8nHdYnPtw5ZSN3mkqo-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="240" as="sourcePoint" />
+            <mxPoint x="290" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="260" y="230" />
+              <mxPoint x="290" y="240" />
+              <mxPoint x="240" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Yx8nHdYnPtw5ZSN3mkqo-8" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=1.013;exitY=0.633;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.013;entryY=0.3;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Yx8nHdYnPtw5ZSN3mkqo-4" target="Yx8nHdYnPtw5ZSN3mkqo-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="230" as="sourcePoint" />
+            <mxPoint x="580" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="580" y="230" />
+              <mxPoint x="530" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
