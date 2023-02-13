@@ -1,13 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2023-02-13T12:39:38.073Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="b_d8L_knnMnzF0AsPIsV" version="20.8.20" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-13T12:59:50.878Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="crEasHUepfka-N-A2uxm" version="20.8.20" type="github">
   <diagram name="Página-1" id="dUaSISTyouP2mR0TBTnx">
     <mxGraphModel dx="1194" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="eNYxmGwZaBe9i3vbMudD-1" value="Empresa" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eNYxmGwZaBe9i3vbMudD-1" value="Premiação" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="60" y="90" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="eNYxmGwZaBe9i3vbMudD-2" value="Premiação" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eNYxmGwZaBe9i3vbMudD-2" value="Empresa" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="320" y="70" width="136" height="80" as="geometry" />
         </mxCell>
         <mxCell id="eNYxmGwZaBe9i3vbMudD-3" value="Funcionario" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
