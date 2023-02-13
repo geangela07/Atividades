@@ -1,35 +1,47 @@
-<mxfile host="app.diagrams.net" modified="2023-02-13T12:57:12.866Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="8SbdSuNHA4VsO2kCUbrA" version="20.8.20" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-13T14:01:50.151Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="QAmvPRs6_mF-9TBnzxkD" version="20.8.20" type="github">
   <diagram name="Página-1" id="imeP4w_c66DNUwzUJW6N">
     <mxGraphModel dx="1194" dy="584" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="8EXz8RUZio_yi-uxEoa5-1" value="Imobiliaria" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="40" width="120" height="40" as="geometry" />
+        <mxCell id="8EXz8RUZio_yi-uxEoa5-8" value="Alugar" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="260" width="130" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="8EXz8RUZio_yi-uxEoa5-2" value="Condoinio" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="300" y="20" width="140" height="80" as="geometry" />
+        <mxCell id="8EXz8RUZio_yi-uxEoa5-9" value="Comprar" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="420" width="125" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="8EXz8RUZio_yi-uxEoa5-3" value="Propriedades" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="40" width="120" height="40" as="geometry" />
+        <mxCell id="8EXz8RUZio_yi-uxEoa5-10" value="Pessoa" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="250" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="8EXz8RUZio_yi-uxEoa5-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="8EXz8RUZio_yi-uxEoa5-2" target="8EXz8RUZio_yi-uxEoa5-1">
+        <mxCell id="8EXz8RUZio_yi-uxEoa5-11" value="ID_Pessoa(PK)&lt;br&gt;Nome_Pessoa&lt;br&gt;CPF_Pessoa" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="90" y="280" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8EXz8RUZio_yi-uxEoa5-12" value="Propriedade" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="240" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8EXz8RUZio_yi-uxEoa5-13" value="ID_Propriedade(PK)&lt;br&gt;Endereço_Proprie&lt;br&gt;dade&lt;br&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="630" y="270" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8EXz8RUZio_yi-uxEoa5-14" value="Alugar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="110" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8EXz8RUZio_yi-uxEoa5-15" value="ID_Aluguel(PK)&lt;br&gt;ID_Pessoa(FK)&lt;br&gt;ID_Propriedade&lt;br&gt;(FK)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="340" y="140" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8EXz8RUZio_yi-uxEoa5-16" value="Contrato" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="555" width="110" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="8EXz8RUZio_yi-uxEoa5-17" value="ID_Contrato(PK)&lt;br&gt;ID_Pessao(FK)&lt;br&gt;ID_Propriedade&lt;br&gt;(FK)&lt;br&gt;Data_Contrato" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="345" y="590" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8EXz8RUZio_yi-uxEoa5-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8EXz8RUZio_yi-uxEoa5-10" target="8EXz8RUZio_yi-uxEoa5-15">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="200" y="100" as="sourcePoint" />
-            <mxPoint x="200" y="60" as="targetPoint" />
+            <mxPoint x="190" y="220" as="sourcePoint" />
+            <mxPoint x="300" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="240" y="180" />
+            </Array>
           </mxGeometry>
-        </mxCell>
-        <mxCell id="8EXz8RUZio_yi-uxEoa5-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="8EXz8RUZio_yi-uxEoa5-2" target="8EXz8RUZio_yi-uxEoa5-3">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="480" y="80" as="sourcePoint" />
-            <mxPoint x="530" y="30" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="8EXz8RUZio_yi-uxEoa5-6" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="230" y="30" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="8EXz8RUZio_yi-uxEoa5-7" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="480" y="30" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
