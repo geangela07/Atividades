@@ -27,7 +27,7 @@ class Fornecedor:
         '''
         return sql
 
-    def inserirFFornecedor(self):
+    def inserirFornecedor(self):
         sql = f'''
         INSERT INTO "Fornecedor"
         VALUES(default,'{self._nome}','{self._cnpj}')
